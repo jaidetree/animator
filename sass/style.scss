@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#wrapper > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    height: 500px;
+    &:nth-child(n) {
+      background: #ccf;
+    }
+    &:nth-child(2n) {
+      background: #cfc;
+    }
+    &:nth-child(3n) {
+      background: #fcc;
+    }
+  }
+}

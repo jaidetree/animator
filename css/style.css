@@ -1,0 +1,28 @@
+/* line 1, ../sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/style.scss */
+#wrapper > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 9, ../sass/style.scss */
+#wrapper > ul li {
+  height: 500px;
+}
+/* line 11, ../sass/style.scss */
+#wrapper > ul li:nth-child(n) {
+  background: #ccf;
+}
+/* line 14, ../sass/style.scss */
+#wrapper > ul li:nth-child(2n) {
+  background: #cfc;
+}
+/* line 17, ../sass/style.scss */
+#wrapper > ul li:nth-child(3n) {
+  background: #fcc;
+}
