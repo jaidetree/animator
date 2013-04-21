@@ -1,6 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+}
+#wrapper {
+  width: auto;
 }
 #wrapper > ul {
   list-style: none;
@@ -8,6 +15,7 @@ body {
   padding: 0;
   li {
     height: 500px;
+    width: 8000px;
     &:nth-child(n) {
       background: #ccf;
     }
@@ -18,4 +26,18 @@ body {
       background: #fcc;
     }
   }
+}
+
+.testobj, .person3 {
+  position: fixed;
+  top: 400px;
+  background: rgba(100, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
+}
+
+.person3 {
+  position: fixed;
+  background: #000;
+  left: 20px;
 }

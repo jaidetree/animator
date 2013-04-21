@@ -2,27 +2,53 @@
 body {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
 }
 
-/* line 5, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
+#wrapper {
+  width: auto;
+}
+
+/* line 12, ../sass/style.scss */
 #wrapper > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 9, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 #wrapper > ul li {
   height: 500px;
+  width: 8000px;
 }
-/* line 11, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 #wrapper > ul li:nth-child(n) {
   background: #ccf;
 }
-/* line 14, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 #wrapper > ul li:nth-child(2n) {
   background: #cfc;
 }
-/* line 17, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 #wrapper > ul li:nth-child(3n) {
   background: #fcc;
+}
+
+/* line 31, ../sass/style.scss */
+.testobj, .person3 {
+  position: fixed;
+  top: 400px;
+  background: rgba(100, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
+}
+
+/* line 39, ../sass/style.scss */
+.person3 {
+  position: fixed;
+  background: #000;
+  left: 20px;
 }
