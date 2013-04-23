@@ -242,6 +242,25 @@ Animator.animations = (function($, _) {
         }
     });
 
+    var TextboxAnimation = DefaultAnimation.extend({
+        init: function(animationData) {
+            AutoAnimation.__super__.init.apply(this, [animationData]);
+            this.buildAnimation();
+        },
+
+        buildAnimation: function() {
+            var animations,
+                animation,
+                newAnimations = [];
+            animations = $.extend(true, [], this.animations);
+            for (var i = 0; i < animations.length; i++) {
+                animation = animations[i];
+                for ( var z = animation.position - 3; z < animation.position; z++ ) {
+                }
+            }
+        }
+    });
+
     return {
         DefaultAnimation: DefaultAnimation,
         AutoAnimation: AutoAnimation
